@@ -31,7 +31,7 @@ public class ReservationController {
 	    }
 	
 	@GetMapping("/reservations")
-	@RolesAllowed("user")
+	// @RolesAllowed("user")
 	public Collection <Reservation> getReservations()
 	{
 	return reservationRepository.findAll();
